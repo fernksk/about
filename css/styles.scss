@@ -1,135 +1,145 @@
 body{
-  background-color: #fff;
-  margin: 0;
-  padding: 0;
+background-color: #fff;
+margin: 0;
+padding: 0;
+background-image: url("../images/aboutbg.jpg");
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
 }
 
 .navbar{
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 25px;
-  font-weight: 300;
-  letter-spacing: 5px;
+font-family: 'Roboto Condensed', sans-serif;
+font-size: 25px;
+font-weight: 300;
+letter-spacing: 5px;
 }
 
-.navbar-dark .navbar-nav .active>.nav-link,{
-  color: #f0e67d;
+.navbar-dark .navbar-nav .active>.nav-link{
+color: #f0e67d;
 }
 
 .nav-box{
-  margin-left: 200px;
-  margin-top: 30px;
-  display: inline-block;
+margin-left: 200px;
+margin-top: 30px;
+display: inline-block;
 }
 
 .nav-link{
-  animation: fadeIn 5s;
-  margin-right: 50px;
-  border-bottom: .25rem solid transparent;
+animation: fadeIn 5s;
+margin-right: 50px;
+border-bottom: .25rem solid transparent;
 }
 
 /*nav-link animation*/
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
+from {
+opacity: 0;
+}
 
-  to {
-    opacity: 1;
-  }
+to {
+opacity: 1;
+}
 }
 
 .nav-link:hover{
-  border-bottom-color: #f0e67d;
+border-bottom-color: #f0e67d;
 }
 
 .card{
-  font-family: 'Roboto Condensed', sans-serif;
-  color: #747474;
-  font-size: 18.5px;
-  font-weight: 300;
-  letter-spacing: 1px;
-  margin-left: 315px;
-  margin-top: 250px;
-  border-width: 3px;
-  background-color: #2c2c2c;
-  z-index: 2;
+font-family: 'Roboto Condensed', sans-serif;
+color: #747474;
+font-size: 18.5px;
+font-weight: 300;
+letter-spacing: 1px;
+margin-left: 315px;
+margin-top: 250px;
+border-width: 3px;
+background-color: #2c2c2c;
+z-index: 2;
+}
+
+.card:hover{
+box-shadow: 0px 10px 20px #000;
+color: #f0e67d;
 }
 
 .card-title{
-  text-align: center;
-  color: #f0e67d;
-  letter-spacing: 4px;
-  font-size: 50px;
-  font-weight: 700;
+text-align: center;
+color: #f0e67d;
+letter-spacing: 4px;
+font-size: 50px;
+font-weight: 700;
 }
 
 .card-link{
-  text-align: center;
-  color: #747474;
-  font-size: 20px;
-  font-weight: 300;
-  letter-spacing: 3px;
-  margin-left: 150px;
+text-align: center;
+color: #747474;
+font-size: 20px;
+font-weight: 300;
+letter-spacing: 2px;
+margin-left: 85px;
 }
 
 a:hover{
-  color: #f0e67d;
+color: #f0e67d;
 }
 
 /*responsive cadrd*/
 
 @media (max-width: 576px) {
-  .card{
-    margin-left: 5%;
-    bottom: 0;
-    font-size: 14px;
-  }
-  .card-title{
-    font-size: 30px;
-  }
-  .card-link{
-    font-size: 15px;
-  }
+.card{
+margin-left: 5%;
+bottom: 0;
+font-size: 14px;
+}
+.card-title{
+font-size: 30px;
+}
+.card-link{
+font-size: 15px;
+}
 }
 
 @media (max-width: 768px) {
-  .card{
-    margin-left: 15%;
-    margin-right: 0;
-    font-size: 16px;
-  }
-  .card-title{
-    font-size: 40px;
-  }
-  .card-link{
-    font-size: 17px;
-  }
+.card{
+margin-left: 15%;
+margin-right: 0;
+font-size: 16px;
+}
+.card-title{
+font-size: 40px;
+}
+.card-link{
+font-size: 17px;
+}
 }
 
 img.profile{
-  width: 90%;
-  padding-top: 150px;
-  margin-bottom: 0px;
-  margin-left: -50px;
-  z-index: 1;
+width: 90%;
+padding-top: 150px;
+margin-bottom: 0px;
+margin-left: -50px;
+z-index: 1;
 }
 
 /*responsive img*/
 
 @media (max-width: 576px) {
-  img.profile{
-   margin-left: 15%;
-   margin-top:0;
+img.profile{
+margin-left: 15%;
+margin-top:0;
 }
 }
 
 @media (max-width: 768px) {
-  img.profile{
-    width: 75%;
-   margin-left: 15%;
-   margin-right: 0;
-   margin-top:0;
+img.profile{
+width: 75%;
+margin-left: 15%;
+margin-right: 0;
+margin-top:0;
 }
 
 /*responsive img container*/
@@ -137,95 +147,111 @@ img.profile{
 }
 
 @media (max-width: 576px) {
-  .col-md-4{
-    margin-top: -105px;
-  }
+.col-md-4{
+margin-top: -105px;
+}
 }
 
 .flex-container {
-  flex-direction: column;
-  padding-top: 200px;
-  margin-left: -160px;
-  z-index: 2;
+flex-direction: column;
+padding-top: 200px;
+margin-left: -160px;
+z-index: 2;
 }
 
 .flex-container > div {
-  font-family: 'Roboto Condensed', sans-serif;
-  width: 250px;
-  margin: 10px;
-  text-align: center;
-  font-size: 30px;
-  border-radius: 3px;
+font-family: 'Roboto Condensed', sans-serif;
+width: 250px;
+margin: 10px;
+text-align: center;
+font-size: 30px;
+border-radius: 3px;
 }
 
 .col.context {
-  background-color: #808080;
-  text-align: center;
+background-color: #808080;
+text-align: center;
+}
+
+.col.context:hover{
+box-shadow: 0px 10px 20px #000;
 }
 
 p.content1{
-  padding-top: 10px;
-  padding-bottom: 15px;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 300;
-  letter-spacing: 1px;
+padding-top: 10px;
+padding-bottom: 15px;
+color: #fff;
+font-size: 15px;
+font-weight: 300;
+letter-spacing: 1px;
+}
+
+p.content1:hover{
+color: #2c2c2c;
 }
 
 .col.content {
-  background-color: #f0e67d;
-  text-align: center;
-  display: inline-block;
+background-color: #f0e67d;
+text-align: center;
+display: inline-block;
+}
+
+.col.content:hover{
+box-shadow: 0px 10px 20px #000;
 }
 
 p.content2{
-  padding-top: 10px;
-  color: #747474;
-  font-size: 15px;
-  font-weight: 300;
-  letter-spacing: 1px;
+padding-top: 10px;
+color: #747474;
+font-size: 15px;
+font-weight: 300;
+letter-spacing: 1px;
+}
+
+p.content2:hover{
+color: #000;
 }
 
 img.drawing{
-  padding-top: 5px;
-  width: 98%;
+padding-top: 5px;
+width: 98%;
 }
 
 /*responsive right containers*/
 
 @media (max-width: 576px) {
-  .flex-container{
-    margin-left: 20%;
-    margin-right: 0;
-    padding-top: 25px;
-  }
+.flex-container{
+margin-left: 20%;
+margin-right: 0;
+padding-top: 25px;
+}
 }
 
 @media (max-width: 768px) {
-  .flex-container{
-    margin-left: 25%;
-    margin-right: 0;
-    padding-top: 25px;
-  }
+.flex-container{
+margin-left: 25%;
+margin-right: 0;
+padding-top: 25px;
+}
 }
 
 /*responsive navbar*/
 
 @media (max-width: 576px) {
-  .navbar-collapse{
-    font-size: 15px;
-  }
-  .nav-link {
-    display: inline-block;
-  }
+.navbar-collapse{
+font-size: 15px;
+}
+.nav-link {
+display: inline-block;
+}
 }
 
 @media (max-width: 768px) {
-  .nav-link {
-    font-size: 15px;
-    display: inline-block;
-  }
-  .nav-box{
-    margin-left: 43%;
-  }
+.nav-link {
+font-size: 15px;
+display: inline-block;
+}
+.nav-box{
+margin-left: 43%;
+}
 }
